@@ -1,0 +1,1442 @@
+{
+	"UdonSharp.Examples.Utilities.BoneFollower.Start()": {
+		"methodName": "_start",
+		"parameters": null
+	},
+	"UdonSharp.Examples.Utilities.BoneFollower.Update()": {
+		"methodName": "_update",
+		"parameters": null
+	},
+	"Exit.Start()": {
+		"methodName": "_start",
+		"parameters": null
+	},
+	"Exit.Interact()": {
+		"methodName": "_interact",
+		"parameters": null
+	},
+	"Exit.On_Entered_Cave()": {
+		"methodName": "On_Entered_Cave",
+		"parameters": null
+	},
+	"Exit.SendPlayerToExitCave()": {
+		"methodName": "SendPlayerToExitCave",
+		"parameters": null
+	},
+	"Exit.Reset()": {
+		"methodName": "Reset",
+		"parameters": null
+	},
+	"UdonSharp.Examples.Utilities.WorldAudioSettings.OnPlayerJoined(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "_onPlayerJoined",
+		"parameters": [
+			"onPlayerJoinedPlayer"
+		]
+	},
+	"UdonSharp.Examples.Utilities.InteractToggle.Interact()": {
+		"methodName": "_interact",
+		"parameters": null
+	},
+	"Miner28.UdonUtils.Network.NetworkInterface.SendMethodNetworked(string, SyncTarget, params VRC.SDK3.Data.DataToken[])": {
+		"methodName": "__0_SendMethodNetworked",
+		"parameters": [
+			"__0_methodName__param",
+			"__0_target__param",
+			"__0_paramTokens__param"
+		]
+	},
+	"Miner28.UdonUtils.Network.NetworkInterface.SendMethodNetworked(string, VRC.SDKBase.VRCPlayerApi, params VRC.SDK3.Data.DataToken[])": {
+		"methodName": "__1_SendMethodNetworked",
+		"parameters": [
+			"__1_methodName__param",
+			"__1_target__param",
+			"__1_paramTokens__param"
+		]
+	},
+	"Miner28.UdonUtils.Network.NetworkInterface.SendMethodNetworked(string, SyncChannel, params VRC.SDK3.Data.DataToken[])": {
+		"methodName": "__2_SendMethodNetworked",
+		"parameters": [
+			"__2_methodName__param",
+			"__0_channel__param",
+			"__2_paramTokens__param"
+		]
+	},
+	"Miner28.UdonUtils.Network.NetworkInterface.SetupInterface()": {
+		"methodName": "SetupInterface",
+		"parameters": null
+	},
+	"Miner28.UdonUtils.Network.NetworkInterface.OnCallerAssigned()": {
+		"methodName": "OnCallerAssigned",
+		"parameters": null
+	},
+	"UdonSharp.Examples.Utilities.PlayerModSetter.Start()": {
+		"methodName": "_start",
+		"parameters": null
+	},
+	"UdonSharp.Examples.Utilities.GlobalToggleObject.Start()": {
+		"methodName": "_start",
+		"parameters": null
+	},
+	"UdonSharp.Examples.Utilities.GlobalToggleObject.OnDeserialization()": {
+		"methodName": "_onDeserialization",
+		"parameters": null
+	},
+	"UdonSharp.Examples.Utilities.GlobalToggleObject.Interact()": {
+		"methodName": "_interact",
+		"parameters": null
+	},
+	"SkeletonSpellBall.Start()": {
+		"methodName": "_start",
+		"parameters": null
+	},
+	"SkeletonSpellBall.Instantiate(UnityEngine.GameObject, UnityEngine.GameObject, VRC.SDKBase.VRCPlayerApi, Bloodsplat_Object_Pool_Manager)": {
+		"methodName": "__0_Instantiate",
+		"parameters": [
+			"__0_prefab__param",
+			"__0_hand__param",
+			"__0_target__param",
+			"__0_bloodpool__param"
+		]
+	},
+	"SkeletonSpellBall.Update()": {
+		"methodName": "_update",
+		"parameters": null
+	},
+	"SkeletonSpellBall.On_Explode(bool)": {
+		"methodName": "__0_On_Explode",
+		"parameters": [
+			"__0_didHit__param"
+		]
+	},
+	"SkeletonSpellBall.GetBloodsplatPosition(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "__0_GetBloodsplatPosition",
+		"parameters": [
+			"__0_player__param"
+		]
+	},
+	"SkeletonSpellBall.OnHit()": {
+		"methodName": "OnHit",
+		"parameters": null
+	},
+	"SkeletonSpellBall.RespawnOnHit()": {
+		"methodName": "RespawnOnHit",
+		"parameters": null
+	},
+	"hehehe.Start()": {
+		"methodName": "_start",
+		"parameters": null
+	},
+	"hehehe.Play()": {
+		"methodName": "Play",
+		"parameters": null
+	},
+	"Stairs.Start()": {
+		"methodName": "_start",
+		"parameters": null
+	},
+	"Stairs.SetTeleportLocation(ref UnityEngine.GameObject)": {
+		"methodName": "__0_SetTeleportLocation",
+		"parameters": [
+			"__0_pos__param"
+		]
+	},
+	"Stairs.Interact()": {
+		"methodName": "_interact",
+		"parameters": null
+	},
+	"CaveEnterTrigger.Start()": {
+		"methodName": "_start",
+		"parameters": null
+	},
+	"CaveEnterTrigger.OnPlayerTriggerEnter(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "_onPlayerTriggerEnter",
+		"parameters": [
+			"onPlayerTriggerEnterPlayer"
+		]
+	},
+	"Miner28.UdonUtils.Network.NetworkedEventCaller.ReceiveData(int)": {
+		"methodName": "__0_ReceiveData",
+		"parameters": [
+			"__0_startIndex__param"
+		]
+	},
+	"Miner28.UdonUtils.Network.NetworkedEventCaller.SetupCaller()": {
+		"methodName": "SetupCaller",
+		"parameters": null
+	},
+	"Miner28.UdonUtils.Network.NetworkedEventCaller.OnEnable()": {
+		"methodName": "_onEnable",
+		"parameters": null
+	},
+	"Miner28.UdonUtils.Network.NetworkedEventCaller.OnPreSerialization()": {
+		"methodName": "_onPreSerialization",
+		"parameters": null
+	},
+	"Miner28.UdonUtils.Network.NetworkedEventCaller.OnPostSerialization(VRC.Udon.Common.SerializationResult)": {
+		"methodName": "_onPostSerialization",
+		"parameters": [
+			"onPostSerializationResult"
+		]
+	},
+	"Miner28.UdonUtils.Network.NetworkedEventCaller.OnDeserialization()": {
+		"methodName": "_onDeserialization",
+		"parameters": null
+	},
+	"Miner28.UdonUtils.Network.NetworkedEventCaller.SendUdonMethod(Miner28.UdonUtils.Network.NetworkInterface, int)": {
+		"methodName": "__0_SendUdonMethod",
+		"parameters": [
+			"__0_target__param",
+			"__0_methodTarget__param"
+		]
+	},
+	"Miner28.UdonUtils.Network.NetworkedEventCaller._PrepareSend(uint, string, uint, VRC.SDK3.Data.DataToken[])": {
+		"methodName": "__0__PrepareSend",
+		"parameters": [
+			"__0_intTarget__param",
+			"__0_method__param",
+			"__0_scriptTarget__param",
+			"__0_data__param"
+		]
+	},
+	"Miner28.UdonUtils.Network.NetworkedEventCaller._SendQueue()": {
+		"methodName": "_SendQueue",
+		"parameters": null
+	},
+	"Miner28.UdonUtils.Network.NetworkedEventCaller.SetUdonVariable(string, VRC.SDK3.Data.DataToken)": {
+		"methodName": "__0_SetUdonVariable",
+		"parameters": [
+			"__0_variable__param",
+			"__0_token__param"
+		]
+	},
+	"Miner28.UdonUtils.Network.NetworkedEventCaller.Log(object)": {
+		"methodName": "__0_Log",
+		"parameters": [
+			"__0_log__param"
+		]
+	},
+	"Miner28.UdonUtils.Network.NetworkedEventCaller.LogWarning(object)": {
+		"methodName": "__0_LogWarning",
+		"parameters": [
+			"__1_log__param"
+		]
+	},
+	"Miner28.UdonUtils.Network.NetworkedEventCaller.LogError(object)": {
+		"methodName": "__0_LogError",
+		"parameters": [
+			"__2_log__param"
+		]
+	},
+	"Miner28.UdonUtils.Network.NetworkedEventCaller.SendData(uint, uint, uint, VRC.SDK3.Data.DataToken[])": {
+		"methodName": "__0_SendData",
+		"parameters": [
+			"__1_method__param",
+			"__1_scriptTarget__param",
+			"__1_target__param",
+			"__1_data__param"
+		]
+	},
+	"Game.On_MasterUI_RoundTimeSlider_ValueChanged()": {
+		"methodName": "On_MasterUI_RoundTimeSlider_ValueChanged",
+		"parameters": null
+	},
+	"Game.On_MasterUI_AbandonLaggers_Toggled()": {
+		"methodName": "On_MasterUI_AbandonLaggers_Toggled",
+		"parameters": null
+	},
+	"Game.On_AbandonLaggersValueChanged(VRC.SDKBase.VRCPlayerApi, bool)": {
+		"methodName": "__0_On_AbandonLaggersValueChanged",
+		"parameters": [
+			"__0_requestingPlayer__param",
+			"__0_state__param"
+		]
+	},
+	"Game.MasterUIUpdate()": {
+		"methodName": "MasterUIUpdate",
+		"parameters": null
+	},
+	"Game.OnRoundTimeSliderValueChanged(VRC.SDKBase.VRCPlayerApi, float)": {
+		"methodName": "__0_OnRoundTimeSliderValueChanged",
+		"parameters": [
+			"__1_requestingPlayer__param",
+			"__0_valueMinutes__param"
+		]
+	},
+	"Game.Start()": {
+		"methodName": "_start",
+		"parameters": null
+	},
+	"Game.RequestInitialGameStatus()": {
+		"methodName": "RequestInitialGameStatus",
+		"parameters": null
+	},
+	"Game.On_InitialGameStatusRequest(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "__0_On_InitialGameStatusRequest",
+		"parameters": [
+			"__2_requestingPlayer__param"
+		]
+	},
+	"Game.On_InitialGameStatusResponse(VRC.SDKBase.VRCPlayerApi, VRC.SDKBase.VRCPlayerApi, string, float, bool)": {
+		"methodName": "__0_On_InitialGameStatusResponse",
+		"parameters": [
+			"__0_respondingPlayer__param",
+			"__3_requestingPlayer__param",
+			"__0_gameStatus__param",
+			"__0_roundTimeSeconds__param",
+			"__0_abandonLaggers__param"
+		]
+	},
+	"Game.OnPlayerJoined(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "_onPlayerJoined",
+		"parameters": [
+			"onPlayerJoinedPlayer"
+		]
+	},
+	"Game.OnPlayerLeft(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "_onPlayerLeft",
+		"parameters": [
+			"onPlayerLeftPlayer"
+		]
+	},
+	"Game.OnMasterTransferred(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "_onMasterTransferred",
+		"parameters": [
+			"onMasterTransferredNewMaster"
+		]
+	},
+	"Game.GameStatusToString()": {
+		"methodName": "GameStatusToString",
+		"parameters": null
+	},
+	"Game.GameStatusFromString(string)": {
+		"methodName": "__0_GameStatusFromString",
+		"parameters": [
+			"__0_statusString__param"
+		]
+	},
+	"Game.Update()": {
+		"methodName": "_update",
+		"parameters": null
+	},
+	"Game.LateUpdate()": {
+		"methodName": "_lateUpdate",
+		"parameters": null
+	},
+	"Game.On_ReceivedPlayerLoadingPercentage(VRC.SDKBase.VRCPlayerApi, float, string, float)": {
+		"methodName": "__0_On_ReceivedPlayerLoadingPercentage",
+		"parameters": [
+			"__4_requestingPlayer__param",
+			"__0_percentage__param",
+			"__0_playerNameId__param",
+			"__0_fps__param"
+		]
+	},
+	"Game.MasterGameUpdate(float)": {
+		"methodName": "__0_MasterGameUpdate",
+		"parameters": [
+			"__0_delta__param"
+		]
+	},
+	"Game.EnableGameStartButton()": {
+		"methodName": "EnableGameStartButton",
+		"parameters": null
+	},
+	"Game.On_StartGameButtonPressed(int)": {
+		"methodName": "__0_On_StartGameButtonPressed",
+		"parameters": [
+			"__0_theme__param"
+		]
+	},
+	"Game.On_AnnounceStartGameButtonPressed(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "__0_On_AnnounceStartGameButtonPressed",
+		"parameters": [
+			"__5_requestingPlayer__param"
+		]
+	},
+	"Game.MazeGenerationFailed()": {
+		"methodName": "MazeGenerationFailed",
+		"parameters": null
+	},
+	"Game.MazeGenerationFailedAttempt()": {
+		"methodName": "MazeGenerationFailedAttempt",
+		"parameters": null
+	},
+	"Game.GenerateNewMaze()": {
+		"methodName": "GenerateNewMaze",
+		"parameters": null
+	},
+	"Game.SerializeMazeToB64Json()": {
+		"methodName": "SerializeMazeToB64Json",
+		"parameters": null
+	},
+	"Game.On_Successfully_Serialized_To_JSON()": {
+		"methodName": "On_Successfully_Serialized_To_JSON",
+		"parameters": null
+	},
+	"Game.SyncStateDictionaries()": {
+		"methodName": "SyncStateDictionaries",
+		"parameters": null
+	},
+	"Game.On_SyncStateDictionaries(VRC.SDKBase.VRCPlayerApi, string, string, int)": {
+		"methodName": "__0_On_SyncStateDictionaries",
+		"parameters": [
+			"__6_requestingPlayer__param",
+			"__0_generationStatusToken__param",
+			"__0_loadingStatesToken__param",
+			"__0_playersExpected__param"
+		]
+	},
+	"Game.SendGeneratedMazeDataParts()": {
+		"methodName": "SendGeneratedMazeDataParts",
+		"parameters": null
+	},
+	"Game.SendGeneratedMazeDataPart()": {
+		"methodName": "SendGeneratedMazeDataPart",
+		"parameters": null
+	},
+	"Game.MazeToDictionary(int, int, int)": {
+		"methodName": "__0_MazeToDictionary",
+		"parameters": [
+			"__0_width__param",
+			"__0_height__param",
+			"__1_theme__param"
+		]
+	},
+	"Game.On_MazeDataPartReceived(VRC.SDKBase.VRCPlayerApi, string, int)": {
+		"methodName": "__0_On_MazeDataPartReceived",
+		"parameters": [
+			"__1_respondingPlayer__param",
+			"__0_dataPart__param",
+			"__0_partIndex__param"
+		]
+	},
+	"Game.HandleMazeDictionary()": {
+		"methodName": "HandleMazeDictionary",
+		"parameters": null
+	},
+	"Game.ProcessMazeRow()": {
+		"methodName": "ProcessMazeRow",
+		"parameters": null
+	},
+	"Game.BeginInstantiatingMaze()": {
+		"methodName": "BeginInstantiatingMaze",
+		"parameters": null
+	},
+	"Game.On_LocalPlayer_MazeGenerated(ref UnityEngine.GameObject)": {
+		"methodName": "__0_On_LocalPlayer_MazeGenerated",
+		"parameters": [
+			"__0_exitTileRef__param"
+		]
+	},
+	"Game.On_Received_FinishedGeneratingMaze(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "__0_On_Received_FinishedGeneratingMaze",
+		"parameters": [
+			"__0_player__param"
+		]
+	},
+	"Game.HandleLateJoiner(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "__0_HandleLateJoiner",
+		"parameters": [
+			"__1_player__param"
+		]
+	},
+	"Game.On_LateJoiner(VRC.SDKBase.VRCPlayerApi, VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "__0_On_LateJoiner",
+		"parameters": [
+			"__7_requestingPlayer__param",
+			"__0_latePlayer__param"
+		]
+	},
+	"Game.On_WaitingForAllPlayersToGenerateTimeout()": {
+		"methodName": "On_WaitingForAllPlayersToGenerateTimeout",
+		"parameters": null
+	},
+	"Game.On_StartGame()": {
+		"methodName": "On_StartGame",
+		"parameters": null
+	},
+	"Game.VRCPlayerApiObjectToUniqueNameString(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "__0_VRCPlayerApiObjectToUniqueNameString",
+		"parameters": [
+			"__2_player__param"
+		]
+	},
+	"Game.On_StartGameReceived(VRC.SDKBase.VRCPlayerApi, string)": {
+		"methodName": "__0_On_StartGameReceived",
+		"parameters": [
+			"__8_requestingPlayer__param",
+			"__0_playerFollowrStatusJsonString__param"
+		]
+	},
+	"Game.SetupAI()": {
+		"methodName": "SetupAI",
+		"parameters": null
+	},
+	"Game.SendPredefinedPathToOtherClients(string[], int)": {
+		"methodName": "__0_SendPredefinedPathToOtherClients",
+		"parameters": [
+			"__0_path__param",
+			"__0_aiID__param"
+		]
+	},
+	"Game.On_PredefinedPathReceived(VRC.SDKBase.VRCPlayerApi, string, int)": {
+		"methodName": "__0_On_PredefinedPathReceived",
+		"parameters": [
+			"__9_requestingPlayer__param",
+			"__1_path__param",
+			"__1_aiID__param"
+		]
+	},
+	"Game.SendPlayerToGameStart(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "__0_SendPlayerToGameStart",
+		"parameters": [
+			"__3_player__param"
+		]
+	},
+	"Game.BeginForestAmbience()": {
+		"methodName": "BeginForestAmbience",
+		"parameters": null
+	},
+	"Game.StopForestAmbience()": {
+		"methodName": "StopForestAmbience",
+		"parameters": null
+	},
+	"Game.BeginCaveAmbience()": {
+		"methodName": "BeginCaveAmbience",
+		"parameters": null
+	},
+	"Game.StopCaveAmbience()": {
+		"methodName": "StopCaveAmbience",
+		"parameters": null
+	},
+	"Game.On_GameTimeExpired()": {
+		"methodName": "On_GameTimeExpired",
+		"parameters": null
+	},
+	"Game.On_GameEndedLordDied()": {
+		"methodName": "On_GameEndedLordDied",
+		"parameters": null
+	},
+	"Game.OnPlayerRespawn(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "_onPlayerRespawn",
+		"parameters": [
+			"onPlayerRespawnPlayer"
+		]
+	},
+	"Game.On_AnnouncePlayerRespawned(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "__0_On_AnnouncePlayerRespawned",
+		"parameters": [
+			"__10_requestingPlayer__param"
+		]
+	},
+	"Game.On_PlayerKilled(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "__0_On_PlayerKilled",
+		"parameters": [
+			"__0_deadPlayer__param"
+		]
+	},
+	"Game.AreAllNonFollowersDead()": {
+		"methodName": "AreAllNonFollowersDead",
+		"parameters": null
+	},
+	"Game.AnnounceGameFinish()": {
+		"methodName": "AnnounceGameFinish",
+		"parameters": null
+	},
+	"Game.On_GameFinished(VRC.SDKBase.VRCPlayerApi, bool, bool)": {
+		"methodName": "__0_On_GameFinished",
+		"parameters": [
+			"__11_requestingPlayer__param",
+			"__0_lordDied__param",
+			"__0_allNonFollowersDied__param"
+		]
+	},
+	"Game.On_ResetGame()": {
+		"methodName": "On_ResetGame",
+		"parameters": null
+	},
+	"Game.On_ResetGameReceived()": {
+		"methodName": "On_ResetGameReceived",
+		"parameters": null
+	},
+	"Game.Respawn()": {
+		"methodName": "Respawn",
+		"parameters": null
+	},
+	"Game.Announce_Self_Attacked_By_Enemy_AI(int)": {
+		"methodName": "__0_Announce_Self_Attacked_By_Enemy_AI",
+		"parameters": [
+			"__2_aiID__param"
+		]
+	},
+	"Game.On_Player_Attacked_By_Enemy_AI(VRC.SDKBase.VRCPlayerApi, int)": {
+		"methodName": "__0_On_Player_Attacked_By_Enemy_AI",
+		"parameters": [
+			"__1_deadPlayer__param",
+			"__3_aiID__param"
+		]
+	},
+	"Game.OnLocalPlayerKilledBySkeleton()": {
+		"methodName": "OnLocalPlayerKilledBySkeleton",
+		"parameters": null
+	},
+	"Lord.Start()": {
+		"methodName": "_start",
+		"parameters": null
+	},
+	"Lord.Update()": {
+		"methodName": "_update",
+		"parameters": null
+	},
+	"Lord.LateUpdate()": {
+		"methodName": "_lateUpdate",
+		"parameters": null
+	},
+	"Lord.LookAtPlayer(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "__0_LookAtPlayer",
+		"parameters": [
+			"__0_player__param"
+		]
+	},
+	"Lord.PickRandomTargetPosition()": {
+		"methodName": "PickRandomTargetPosition",
+		"parameters": null
+	},
+	"Lord.Notify_SetTargetPosition(VRC.SDKBase.VRCPlayerApi, UnityEngine.Vector3)": {
+		"methodName": "__0_Notify_SetTargetPosition",
+		"parameters": [
+			"__0_requestingPlayer__param",
+			"__0_targetPosition__param"
+		]
+	},
+	"Lord.SetTargetPosition(UnityEngine.Vector3, float)": {
+		"methodName": "__0_SetTargetPosition",
+		"parameters": [
+			"__1_targetPosition__param",
+			"__0_targetStopDistance__param"
+		]
+	},
+	"Lord.GetHeight()": {
+		"methodName": "GetHeight",
+		"parameters": null
+	},
+	"Lord.HandleMove(float)": {
+		"methodName": "__0_HandleMove",
+		"parameters": [
+			"__0_delta__param"
+		]
+	},
+	"Lord.HandleRotation(float)": {
+		"methodName": "__0_HandleRotation",
+		"parameters": [
+			"__1_delta__param"
+		]
+	},
+	"Lord.UpdateWalkSpeed(float)": {
+		"methodName": "__0_UpdateWalkSpeed",
+		"parameters": [
+			"__2_delta__param"
+		]
+	},
+	"Lord.CheckMeleeHit(ref UnityEngine.Collision, ref UnityEngine.GameObject)": {
+		"methodName": "__0_CheckMeleeHit",
+		"parameters": [
+			"__0_collision__param",
+			"__0_collisionObject__param"
+		]
+	},
+	"Lord.OnHitByPlayer(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "__0_OnHitByPlayer",
+		"parameters": [
+			"__0_attackingPlayer__param"
+		]
+	},
+	"Lord.GetBloodsplatPosition()": {
+		"methodName": "GetBloodsplatPosition",
+		"parameters": null
+	},
+	"Lord.Hide_Lord()": {
+		"methodName": "Hide_Lord",
+		"parameters": null
+	},
+	"Lord.Show_Lord()": {
+		"methodName": "Show_Lord",
+		"parameters": null
+	},
+	"Lord.EnableCapsuleCollider()": {
+		"methodName": "EnableCapsuleCollider",
+		"parameters": null
+	},
+	"Lord.DisableCapsuleCollider()": {
+		"methodName": "DisableCapsuleCollider",
+		"parameters": null
+	},
+	"Lord.On_WalkTargetReached()": {
+		"methodName": "On_WalkTargetReached",
+		"parameters": null
+	},
+	"Lord.On_SayDrinkWine()": {
+		"methodName": "On_SayDrinkWine",
+		"parameters": null
+	},
+	"Lord.On_DrinkWineEnd()": {
+		"methodName": "On_DrinkWineEnd",
+		"parameters": null
+	},
+	"Lord.On_PlayerEntered()": {
+		"methodName": "On_PlayerEntered",
+		"parameters": null
+	},
+	"Lord.On_Notify_PlayerEntered(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "__0_On_Notify_PlayerEntered",
+		"parameters": [
+			"__1_player__param"
+		]
+	},
+	"Lord.Notify_PlayerEnterFailed(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "__0_Notify_PlayerEnterFailed",
+		"parameters": [
+			"__0_targetPlayer__param"
+		]
+	},
+	"Lord.UnfreezeLocalPlayer()": {
+		"methodName": "UnfreezeLocalPlayer",
+		"parameters": null
+	},
+	"Bloodsplat_Object_Pool_Manager.Start()": {
+		"methodName": "_start",
+		"parameters": null
+	},
+	"Bloodsplat_Object_Pool_Manager.CreateBloodsplat(UnityEngine.Vector3, UnityEngine.Quaternion)": {
+		"methodName": "__0_CreateBloodsplat",
+		"parameters": [
+			"__0_position__param",
+			"__0_rotation__param"
+		]
+	},
+	"Bloodsplat_Object_Pool_Manager.ResetBloodsplat(UnityEngine.GameObject, int)": {
+		"methodName": "__0_ResetBloodsplat",
+		"parameters": [
+			"__0_bloodsplat__param",
+			"__0_index__param"
+		]
+	},
+	"Bloodsplat_Object_Pool_Manager.ResetAllBloodsplats()": {
+		"methodName": "ResetAllBloodsplats",
+		"parameters": null
+	},
+	"UdonSharp.Examples.Utilities.MasterToggleObject.Start()": {
+		"methodName": "_start",
+		"parameters": null
+	},
+	"UdonSharp.Examples.Utilities.MasterToggleObject.OnOwnershipRequest(VRC.SDKBase.VRCPlayerApi, VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "_onOwnershipRequest",
+		"parameters": [
+			"onOwnershipRequestRequester",
+			"onOwnershipRequestNewOwner"
+		]
+	},
+	"UdonSharp.Examples.Utilities.MasterToggleObject.OnDeserialization()": {
+		"methodName": "_onDeserialization",
+		"parameters": null
+	},
+	"UdonSharp.Examples.Utilities.MasterToggleObject.Interact()": {
+		"methodName": "_interact",
+		"parameters": null
+	},
+	"PlayerCapsuleColliderManager.Start()": {
+		"methodName": "_start",
+		"parameters": null
+	},
+	"PlayerCapsuleColliderManager.OnPlayerJoined(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "_onPlayerJoined",
+		"parameters": [
+			"onPlayerJoinedPlayer"
+		]
+	},
+	"PlayerCapsuleColliderManager.OnPlayerLeft(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "_onPlayerLeft",
+		"parameters": [
+			"onPlayerLeftPlayer"
+		]
+	},
+	"PlayerCapsuleColliderManager.GetPlayerIndex(string)": {
+		"methodName": "__0_GetPlayerIndex",
+		"parameters": [
+			"__0_playerNameId__param"
+		]
+	},
+	"PlayerCapsuleColliderManager.GetPlayerByCapsuleCollider(UnityEngine.GameObject)": {
+		"methodName": "__0_GetPlayerByCapsuleCollider",
+		"parameters": [
+			"__0_capsuleCollider__param"
+		]
+	},
+	"PlayerCapsuleColliderManager.GetColliderIndex(UnityEngine.GameObject)": {
+		"methodName": "__0_GetColliderIndex",
+		"parameters": [
+			"__1_capsuleCollider__param"
+		]
+	},
+	"PlayerCapsuleColliderManager.DisableColliderTemporarily(UnityEngine.GameObject, float)": {
+		"methodName": "__0_DisableColliderTemporarily",
+		"parameters": [
+			"__2_capsuleCollider__param",
+			"__0_duration__param"
+		]
+	},
+	"PlayerCapsuleColliderManager.EnableCollider(UnityEngine.GameObject)": {
+		"methodName": "__0_EnableCollider",
+		"parameters": [
+			"__3_capsuleCollider__param"
+		]
+	},
+	"PlayerCapsuleColliderManager.EnableColliderByPlayerNameId(string)": {
+		"methodName": "__0_EnableColliderByPlayerNameId",
+		"parameters": [
+			"__1_playerNameId__param"
+		]
+	},
+	"PlayerCapsuleColliderManager.DisableColliderByPlayerName(string, float)": {
+		"methodName": "__0_DisableColliderByPlayerName",
+		"parameters": [
+			"__2_playerNameId__param",
+			"__1_duration__param"
+		]
+	},
+	"PlayerCapsuleColliderManager.SetColliderStatesFromDataDictionary(VRC.SDK3.Data.DataDictionary)": {
+		"methodName": "__0_SetColliderStatesFromDataDictionary",
+		"parameters": [
+			"__0_playerStates__param"
+		]
+	},
+	"PlayerCapsuleColliderManager.Update()": {
+		"methodName": "_update",
+		"parameters": null
+	},
+	"UdonSharp.Examples.Utilities.TrackingDataFollower.Start()": {
+		"methodName": "_start",
+		"parameters": null
+	},
+	"UdonSharp.Examples.Utilities.TrackingDataFollower.LateUpdate()": {
+		"methodName": "_lateUpdate",
+		"parameters": null
+	},
+	"CaveExitTrigger.Start()": {
+		"methodName": "_start",
+		"parameters": null
+	},
+	"CaveExitTrigger.OnPlayerTriggerEnter(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "_onPlayerTriggerEnter",
+		"parameters": [
+			"onPlayerTriggerEnterPlayer"
+		]
+	},
+	"LevelGenerator.Start()": {
+		"methodName": "_start",
+		"parameters": null
+	},
+	"LevelGenerator.GetCopedMazeValue(int, int)": {
+		"methodName": "__0_GetCopedMazeValue",
+		"parameters": [
+			"__0_i__param",
+			"__0_j__param"
+		]
+	},
+	"LevelGenerator.SetCopiedMazeValue(int, int, int)": {
+		"methodName": "__0_SetCopiedMazeValue",
+		"parameters": [
+			"__1_i__param",
+			"__1_j__param",
+			"__0_value__param"
+		]
+	},
+	"LevelGenerator.FindIslands()": {
+		"methodName": "FindIslands",
+		"parameters": null
+	},
+	"LevelGenerator.InitializeIslandVariables()": {
+		"methodName": "InitializeIslandVariables",
+		"parameters": null
+	},
+	"LevelGenerator.InitializeIslandsArray()": {
+		"methodName": "InitializeIslandsArray",
+		"parameters": null
+	},
+	"LevelGenerator.InitializeIslandSizesArray()": {
+		"methodName": "InitializeIslandSizesArray",
+		"parameters": null
+	},
+	"LevelGenerator.CopyMaze()": {
+		"methodName": "CopyMaze",
+		"parameters": null
+	},
+	"LevelGenerator.PreallocateStack()": {
+		"methodName": "PreallocateStack",
+		"parameters": null
+	},
+	"LevelGenerator.InitializeTraversalIndices()": {
+		"methodName": "InitializeTraversalIndices",
+		"parameters": null
+	},
+	"LevelGenerator.ProcessFindIslands()": {
+		"methodName": "ProcessFindIslands",
+		"parameters": null
+	},
+	"LevelGenerator.IterativeDFS(int, int, int, ref int)": {
+		"methodName": "__0_IterativeDFS",
+		"parameters": [
+			"__0_startX__param",
+			"__0_startY__param",
+			"__0_currentIsland__param",
+			"__0_cellCount__param"
+		]
+	},
+	"LevelGenerator.ProcessIterativeDFS()": {
+		"methodName": "ProcessIterativeDFS",
+		"parameters": null
+	},
+	"LevelGenerator.PushToStack(int, int)": {
+		"methodName": "__0_PushToStack",
+		"parameters": [
+			"__0_x__param",
+			"__0_y__param"
+		]
+	},
+	"LevelGenerator.GenerateMaze(int, int)": {
+		"methodName": "__0_GenerateMaze",
+		"parameters": [
+			"__0_width__param",
+			"__0_height__param"
+		]
+	},
+	"LevelGenerator.ResetDirections()": {
+		"methodName": "ResetDirections",
+		"parameters": null
+	},
+	"LevelGenerator.ResetTwistyPathVariables()": {
+		"methodName": "ResetTwistyPathVariables",
+		"parameters": null
+	},
+	"LevelGenerator.GenerateTwistyPath(int, int, UnityEngine.Vector2Int, UnityEngine.Vector2Int, out int)": {
+		"methodName": "__0_GenerateTwistyPath",
+		"parameters": [
+			"__1_width__param",
+			"__1_height__param",
+			"__0_start__param",
+			"__0_exit__param",
+			"__0_size__param"
+		]
+	},
+	"LevelGenerator.ShuffleDirections(UnityEngine.Vector2Int[])": {
+		"methodName": "__0_ShuffleDirections",
+		"parameters": [
+			"__0_directions__param"
+		]
+	},
+	"LevelGenerator.IsWithinBounds(UnityEngine.Vector2Int, int, int)": {
+		"methodName": "__0_IsWithinBounds",
+		"parameters": [
+			"__0_cell__param",
+			"__2_width__param",
+			"__2_height__param"
+		]
+	},
+	"LevelGenerator.IsCloserToExit(UnityEngine.Vector2Int, UnityEngine.Vector2Int, UnityEngine.Vector2Int)": {
+		"methodName": "__0_IsCloserToExit",
+		"parameters": [
+			"__0_current__param",
+			"__0_next__param",
+			"__1_exit__param"
+		]
+	},
+	"LevelGenerator.Get1DIndex(int, int, int)": {
+		"methodName": "__0_Get1DIndex",
+		"parameters": [
+			"__1_x__param",
+			"__1_y__param",
+			"__3_width__param"
+		]
+	},
+	"LevelGenerator.PickExit(int, int)": {
+		"methodName": "__0_PickExit",
+		"parameters": [
+			"__4_width__param",
+			"__3_height__param"
+		]
+	},
+	"LevelGenerator.FindLoopAroundIsland(ref int[][], int, ref int[][], out bool)": {
+		"methodName": "__0_FindLoopAroundIsland",
+		"parameters": [
+			"__0_island__param",
+			"__0_islandSize__param",
+			"__0_maze__param",
+			"__0_foundLoop__param"
+		]
+	},
+	"LevelGenerator.IsPartOfAnyIsland(int, int, int)": {
+		"methodName": "__0_IsPartOfAnyIsland",
+		"parameters": [
+			"__2_i__param",
+			"__2_j__param",
+			"__1_size__param"
+		]
+	},
+	"LevelGenerator.DeleteAllDebugWalls()": {
+		"methodName": "DeleteAllDebugWalls",
+		"parameters": null
+	},
+	"LevelGenerator.DebugInstantiateMaze_Sliced(int)": {
+		"methodName": "__0_DebugInstantiateMaze_Sliced",
+		"parameters": [
+			"__0_theme__param"
+		]
+	},
+	"LevelGenerator.DistanceToWalkableSpace(int, int)": {
+		"methodName": "__0_DistanceToWalkableSpace",
+		"parameters": [
+			"__0_centerI__param",
+			"__0_centerJ__param"
+		]
+	},
+	"LevelGenerator.GetRandomFlower()": {
+		"methodName": "GetRandomFlower",
+		"parameters": null
+	},
+	"LevelGenerator.GetTilePrefabForType(TileType, int)": {
+		"methodName": "__0_GetTilePrefabForType",
+		"parameters": [
+			"__0_type__param",
+			"__0_lod__param"
+		]
+	},
+	"LevelGenerator.GetTileType(int, int, out float)": {
+		"methodName": "__0_GetTileType",
+		"parameters": [
+			"__3_i__param",
+			"__3_j__param",
+			"__0_rotation__param"
+		]
+	},
+	"LevelGenerator.DebugInstantiateMaze_Slice_Iteration()": {
+		"methodName": "DebugInstantiateMaze_Slice_Iteration",
+		"parameters": null
+	},
+	"LevelGenerator.DebugInstantiateMaze_Slice_Loops()": {
+		"methodName": "DebugInstantiateMaze_Slice_Loops",
+		"parameters": null
+	},
+	"LevelGenerator.ProcessIslandLoop()": {
+		"methodName": "ProcessIslandLoop",
+		"parameters": null
+	},
+	"LevelGenerator.DebugPrintLoops(UnityEngine.Vector2Int[][], UnityEngine.Color[])": {
+		"methodName": "__0_DebugPrintLoops",
+		"parameters": [
+			"__0_loops__param",
+			"__0_colors__param"
+		]
+	},
+	"LevelGenerator.DebugInstantiateMaze_Slice_AI()": {
+		"methodName": "DebugInstantiateMaze_Slice_AI",
+		"parameters": null
+	},
+	"LevelGenerator.Done()": {
+		"methodName": "Done",
+		"parameters": null
+	},
+	"LevelGenerator.ResetAllStateVariables()": {
+		"methodName": "ResetAllStateVariables",
+		"parameters": null
+	},
+	"Miner28.UdonUtils.Network.NetworkManager.OnEnable()": {
+		"methodName": "_onEnable",
+		"parameters": null
+	},
+	"Miner28.UdonUtils.Network.NetworkManager.OnPlayerJoined(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "_onPlayerJoined",
+		"parameters": [
+			"onPlayerJoinedPlayer"
+		]
+	},
+	"Miner28.UdonUtils.Network.NetworkManager.OnPlayerLeft(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "_onPlayerLeft",
+		"parameters": [
+			"onPlayerLeftPlayer"
+		]
+	},
+	"Miner28.UdonUtils.Network.NetworkManager.OnDeserialization()": {
+		"methodName": "_onDeserialization",
+		"parameters": null
+	},
+	"Miner28.UdonUtils.Network.NetworkManager._Cleanup()": {
+		"methodName": "_Cleanup",
+		"parameters": null
+	},
+	"Miner28.UdonUtils.Network.NetworkManager.Log(object)": {
+		"methodName": "__0_Log",
+		"parameters": [
+			"__0_log__param"
+		]
+	},
+	"Miner28.UdonUtils.Network.NetworkManager.Log(string)": {
+		"methodName": "__1_Log",
+		"parameters": [
+			"__1_log__param"
+		]
+	},
+	"Miner28.UdonUtils.Network.NetworkManager.OnCallerAssigned()": {
+		"methodName": "OnCallerAssigned",
+		"parameters": null
+	},
+	"OverlayCanvas.Start()": {
+		"methodName": "_start",
+		"parameters": null
+	},
+	"Main_Spawn_StartGameBtn.Start()": {
+		"methodName": "_start",
+		"parameters": null
+	},
+	"Main_Spawn_StartGameBtn.Interact()": {
+		"methodName": "_interact",
+		"parameters": null
+	},
+	"Melee_Weapon.Start()": {
+		"methodName": "_start",
+		"parameters": null
+	},
+	"Melee_Weapon.OnCollisionEnter(UnityEngine.Collision)": {
+		"methodName": "_onCollisionEnter",
+		"parameters": [
+			"onCollisionEnterOther"
+		]
+	},
+	"Melee_Weapon.OnEnemyAIHitByPlayer(VRC.SDKBase.VRCPlayerApi, int)": {
+		"methodName": "__0_OnEnemyAIHitByPlayer",
+		"parameters": [
+			"__0_attackingPlayer__param",
+			"__0_enemyAI_ID__param"
+		]
+	},
+	"Melee_Weapon.OnPlayerHit(VRC.SDKBase.VRCPlayerApi, VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "__0_OnPlayerHit",
+		"parameters": [
+			"__1_attackingPlayer__param",
+			"__0_hitPlayer__param"
+		]
+	},
+	"Melee_Weapon.GetBloodsplatPosition(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "__0_GetBloodsplatPosition",
+		"parameters": [
+			"__0_player__param"
+		]
+	},
+	"Melee_Weapon.On_LocalPlayer_Hit(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "__0_On_LocalPlayer_Hit",
+		"parameters": [
+			"__2_attackingPlayer__param"
+		]
+	},
+	"Melee_Weapon.Reset()": {
+		"methodName": "Reset",
+		"parameters": null
+	},
+	"EnemyAI.InstantiateAI(UnityEngine.GameObject, UnityEngine.Transform, UnityEngine.Vector2Int[], UnityEngine.Color, int)": {
+		"methodName": "__0_InstantiateAI",
+		"parameters": [
+			"__0_prefab__param",
+			"__0_parent__param",
+			"__0_nodes__param",
+			"__0_color__param",
+			"__0_id__param"
+		]
+	},
+	"EnemyAI.SetVector3NodesFromVector2Nodes(UnityEngine.Vector2Int[])": {
+		"methodName": "__0_SetVector3NodesFromVector2Nodes",
+		"parameters": [
+			"__0_v2_Nodes__param"
+		]
+	},
+	"EnemyAI.On_MoveTo(int, int)": {
+		"methodName": "__0_On_MoveTo",
+		"parameters": [
+			"__1_id__param",
+			"__0_nodeTarget__param"
+		]
+	},
+	"EnemyAI.Update()": {
+		"methodName": "_update",
+		"parameters": null
+	},
+	"EnemyAI.HandleRotation(float)": {
+		"methodName": "__0_HandleRotation",
+		"parameters": [
+			"__0_delta__param"
+		]
+	},
+	"EnemyAI.HandleMove(float)": {
+		"methodName": "__0_HandleMove",
+		"parameters": [
+			"__1_delta__param"
+		]
+	},
+	"EnemyAI.GetNextClosest(int, int, int)": {
+		"methodName": "__0_GetNextClosest",
+		"parameters": [
+			"__0_start__param",
+			"__0_target__param",
+			"__0_range__param"
+		]
+	},
+	"EnemyAI.Mod(int, int)": {
+		"methodName": "__0_Mod",
+		"parameters": [
+			"__0_x__param",
+			"__0_m__param"
+		]
+	},
+	"EnemyAI.CheckVision()": {
+		"methodName": "CheckVision",
+		"parameters": null
+	},
+	"EnemyAI.KillPlayer(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "__0_KillPlayer",
+		"parameters": [
+			"__0_player__param"
+		]
+	},
+	"EnemyAI_Animated.Start()": {
+		"methodName": "_start",
+		"parameters": null
+	},
+	"EnemyAI_Animated.UpdateWalkSpeed(float)": {
+		"methodName": "__0_UpdateWalkSpeed",
+		"parameters": [
+			"__0_delta__param"
+		]
+	},
+	"EnemyAI_Animated.CheckMeleeHit(ref UnityEngine.Collision, ref UnityEngine.GameObject)": {
+		"methodName": "__0_CheckMeleeHit",
+		"parameters": [
+			"__0_collision__param",
+			"__0_collisionObject__param"
+		]
+	},
+	"EnemyAI_Animated.OnStunnedByPlayer(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "__0_OnStunnedByPlayer",
+		"parameters": [
+			"__0_attackingPlayer__param"
+		]
+	},
+	"EnemyAI_Animated.OnStunExpired()": {
+		"methodName": "OnStunExpired",
+		"parameters": null
+	},
+	"EnemyAI_Animated.OnHitByPlayer(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "__0_OnHitByPlayer",
+		"parameters": [
+			"__1_attackingPlayer__param"
+		]
+	},
+	"EnemyAI_Animated.GetBloodsplatPosition()": {
+		"methodName": "GetBloodsplatPosition",
+		"parameters": null
+	},
+	"EnemyAI_Animated.OnDestroy()": {
+		"methodName": "_onDestroy",
+		"parameters": null
+	},
+	"EnemyAI_Animated.DisableCapsuleCollider()": {
+		"methodName": "DisableCapsuleCollider",
+		"parameters": null
+	},
+	"EnemyAI_Animated.EnableCapsuleCollider()": {
+		"methodName": "EnableCapsuleCollider",
+		"parameters": null
+	},
+	"EnemyAI_Animated.InstantiateAI(UnityEngine.GameObject, UnityEngine.Transform, UnityEngine.Vector2Int[], UnityEngine.Color, int, Game)": {
+		"methodName": "__0_InstantiateAI",
+		"parameters": [
+			"__0_prefab__param",
+			"__0_parent__param",
+			"__0_nodes__param",
+			"__0_color__param",
+			"__0_id__param",
+			"__0_g__param"
+		]
+	},
+	"EnemyAI_Animated.GeneratePredefinedPath()": {
+		"methodName": "GeneratePredefinedPath",
+		"parameters": null
+	},
+	"EnemyAI_Animated.InitialisePredefinedPath(string[], int)": {
+		"methodName": "__0_InitialisePredefinedPath",
+		"parameters": [
+			"__0_path__param",
+			"__0_aiID__param"
+		]
+	},
+	"EnemyAI_Animated.HandlePredefinedPath()": {
+		"methodName": "HandlePredefinedPath",
+		"parameters": null
+	},
+	"EnemyAI_Animated.SetVector3NodesFromVector2Nodes(UnityEngine.Vector2Int[])": {
+		"methodName": "__0_SetVector3NodesFromVector2Nodes",
+		"parameters": [
+			"__0_v2_Nodes__param"
+		]
+	},
+	"EnemyAI_Animated.On_MoveTo(int, int)": {
+		"methodName": "__0_On_MoveTo",
+		"parameters": [
+			"__1_id__param",
+			"__0_nodeTarget__param"
+		]
+	},
+	"EnemyAI_Animated.Update()": {
+		"methodName": "_update",
+		"parameters": null
+	},
+	"EnemyAI_Animated.HandleRotation(float)": {
+		"methodName": "__0_HandleRotation",
+		"parameters": [
+			"__1_delta__param"
+		]
+	},
+	"EnemyAI_Animated.HandleMove(float)": {
+		"methodName": "__0_HandleMove",
+		"parameters": [
+			"__2_delta__param"
+		]
+	},
+	"EnemyAI_Animated.GetNextClosest(int, int, int)": {
+		"methodName": "__0_GetNextClosest",
+		"parameters": [
+			"__0_start__param",
+			"__0_target__param",
+			"__0_range__param"
+		]
+	},
+	"EnemyAI_Animated.Mod(int, int)": {
+		"methodName": "__0_Mod",
+		"parameters": [
+			"__0_x__param",
+			"__0_m__param"
+		]
+	},
+	"EnemyAI_Animated.CheckVision()": {
+		"methodName": "CheckVision",
+		"parameters": null
+	},
+	"EnemyAI_Animated.KillPlayer(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "__0_KillPlayer",
+		"parameters": [
+			"__0_player__param"
+		]
+	},
+	"CeremonialWine.Start()": {
+		"methodName": "_start",
+		"parameters": null
+	},
+	"CeremonialWine.OnPickup()": {
+		"methodName": "_onPickup",
+		"parameters": null
+	},
+	"CeremonialWine.OnPickupUseDown()": {
+		"methodName": "_onPickupUseDown",
+		"parameters": null
+	},
+	"CeremonialWine.BloodEffect_Play()": {
+		"methodName": "BloodEffect_Play",
+		"parameters": null
+	},
+	"CeremonialWine.PlayHeartbeat()": {
+		"methodName": "PlayHeartbeat",
+		"parameters": null
+	},
+	"CeremonialWine.On_RequestBecomeFollower(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "__0_On_RequestBecomeFollower",
+		"parameters": [
+			"__0_requestingPlayer__param"
+		]
+	},
+	"CeremonialWine.On_FollowerAnnouncement(VRC.SDKBase.VRCPlayerApi, VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "__0_On_FollowerAnnouncement",
+		"parameters": [
+			"__1_requestingPlayer__param",
+			"__0_player__param"
+		]
+	},
+	"CeremonialWine.Reset()": {
+		"methodName": "Reset",
+		"parameters": null
+	},
+	"Scoreboard1.Start()": {
+		"methodName": "_start",
+		"parameters": null
+	},
+	"Scoreboard1.ResetDeaths()": {
+		"methodName": "ResetDeaths",
+		"parameters": null
+	},
+	"Scoreboard1.AnnounceScoreChange(int, int)": {
+		"methodName": "__0_AnnounceScoreChange",
+		"parameters": [
+			"__0_deaths__param",
+			"__0_totalDeaths__param"
+		]
+	},
+	"Scoreboard1.OnScoreChangeReceived(VRC.SDKBase.VRCPlayerApi, int, int)": {
+		"methodName": "__0_OnScoreChangeReceived",
+		"parameters": [
+			"__0_requestingPlayer__param",
+			"__1_deaths__param",
+			"__1_totalDeaths__param"
+		]
+	},
+	"Scoreboard1.Redraw()": {
+		"methodName": "Redraw",
+		"parameters": null
+	},
+	"Scoreboard1.OnReplicationDataReceived(string, string, string)": {
+		"methodName": "__0_OnReplicationDataReceived",
+		"parameters": [
+			"__0_playerListText__param",
+			"__0_deathsText__param",
+			"__0_totalDeathsText__param"
+		]
+	},
+	"Scoreboard1.VRCPlayerApiObjectToUniqueNameString(VRC.SDKBase.VRCPlayerApi)": {
+		"methodName": "__0_VRCPlayerApiObjectToUniqueNameString",
+		"parameters": [
+			"__0_player__param"
+		]
+	},
+	"club.Start()": {
+		"methodName": "_start",
+		"parameters": null
+	},
+	"club.OnCollisionEnter(UnityEngine.Collision)": {
+		"methodName": "_onCollisionEnter",
+		"parameters": [
+			"onCollisionEnterOther"
+		]
+	},
+	"club.OnEnemyAIStunnedByPlayer(VRC.SDKBase.VRCPlayerApi, int, UnityEngine.Vector3, UnityEngine.Quaternion)": {
+		"methodName": "__0_OnEnemyAIStunnedByPlayer",
+		"parameters": [
+			"__0_attackingPlayer__param",
+			"__0_enemyAI_ID__param",
+			"__0_club_position__param",
+			"__0_club_rotation__param"
+		]
+	},
+	"club.Reset()": {
+		"methodName": "Reset",
+		"parameters": null
+	},
+	"club.ResetAll()": {
+		"methodName": "ResetAll",
+		"parameters": null
+	}
+}
