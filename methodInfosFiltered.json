@@ -180,7 +180,9 @@
 		"parameters": [
 			"__0_requestingPlayer__param",
 			"__1_deaths__param",
-			"__1_totalDeaths__param"
+			"__1_totalDeaths__param",
+			"__1_forestsAttempted__param",
+			"__1_forestsCompleted__param"
 		]
 	}
 }

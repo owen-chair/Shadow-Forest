@@ -39,6 +39,7 @@ public class Game : NetworkInterface
     private DataDictionary m_PlayerLoadingPercentages;
     private DataDictionary m_PlayerFPS;
     private float m_LastUpdatedLoadingPercentageTimeText = 0.0f;
+    public TMPro.TMP_Text m_GameMasterText;
 
     public Melee_Weapon[] m_MeleeWeapons;
     public CeremonialWine[] m_CeremonialWines;
@@ -51,6 +52,7 @@ public class Game : NetworkInterface
     public GameObject m_Exit_Spawn_SpawnerReferenceCube;
 
     public Stairs m_TempleStairs;
+    public DesktopStairsExit m_DesktopStairsExit;
 
     public bool m_IsLocalPlayerMaster = false;
     public GameStatus m_GameStatus = GameStatus.Waiting;
@@ -116,7 +118,7 @@ public class Game : NetworkInterface
 
     public int m_Theme = 0;
     public int m_FailedGenerationAttempts = 0;
-    public int m_MaxFailedGenerationAttempts = 20;
+    public int m_MaxFailedGenerationAttempts = 30;
 
     public AudioSource m_Ambience_Cave;
     public AudioSource m_Ambience_Forest;
@@ -127,6 +129,14 @@ public class Game : NetworkInterface
     public Exit m_Exit;
 
     private float m_RoundStartedTime = 0.0f;
+
+    public Scoreboard1 m_SpawnAreaScoreboard;
+
+    public int m_Deaths = 0;
+    public int m_TotalDeaths = 0;
+    public int m_ForestsAttempted = 0;
+    public int m_ForestsCompleted = 0;
+
     public void On_MasterUI_RoundTimeSlider_ValueChanged()
     {
         if(!Networking.IsMaster) return;
@@ -308,6 +318,17 @@ public class Game : NetworkInterface
         {
             this.RequestInitialGameStatus();
         }
+
+        if (player.isLocal)
+        {
+            if (this.m_GameMasterText != null)
+            {
+                if (Networking.Master != null && Networking.Master.IsValid())
+                {
+                    this.m_GameMasterText.text = Networking.Master.displayName;
+                }
+            }
+        }
     }
     
     public override void OnPlayerLeft(VRCPlayerApi player)
@@ -416,6 +437,11 @@ public class Game : NetworkInterface
             {
                 this.On_ResetGame();
             }
+        }
+
+        if (this.m_GameMasterText != null)
+        {
+            this.m_GameMasterText.text = newMaster.displayName;
         }
     }
 
@@ -685,7 +711,7 @@ public class Game : NetworkInterface
         if(success == 0)
         {
             Debug.LogError("[Game.cs] GenerateNewMaze: Failed to generate maze");
-            SendCustomEventDelayedSeconds(nameof(this.MazeGenerationFailedAttempt), 1.0f);
+            SendCustomEventDelayedSeconds(nameof(this.MazeGenerationFailedAttempt), 0.5f);
         }
         else if(success == 1)
         {
@@ -1108,6 +1134,11 @@ public class Game : NetworkInterface
 
         this.m_TempleStairs.SetTeleportLocation(ref exitTileRef);
 
+        if (this.m_DesktopStairsExit != null)
+        {
+            this.m_DesktopStairsExit.Initialise(ref exitTileRef);
+        }
+
         this.m_LoadingPercentage = 100.0f;
         this.m_LocalPlayerFinishedGeneratingMaze = true;
 
@@ -1318,6 +1349,9 @@ public class Game : NetworkInterface
         }
 
         this.m_GameStatus = GameStatus.InProgress;
+
+        this.m_ForestsAttempted++;
+
         if (this.m_SpawnAreaScoreboard != null)
         {
             this.m_SpawnAreaScoreboard.ResetDeaths();
@@ -1427,16 +1461,6 @@ public class Game : NetworkInterface
                 this.m_Game_Spawn_SpawnerReferenceCube.transform.position,
                 this.m_Game_Spawn_SpawnerReferenceCube.transform.rotation
             );
-
-            if (this.m_Ambience_Cave != null && !this.m_Ambience_Cave.isPlaying)
-            {
-                //this.m_Ambience_Cave.Play();
-            }
-
-            if (this.m_Firefly_ParticleSystem != null && !this.m_Firefly_ParticleSystem.isPlaying)
-            {
-                //this.m_Firefly_ParticleSystem.Play();
-            }
         }
     }
 
@@ -1792,10 +1816,6 @@ public class Game : NetworkInterface
         }
     }
 
-    public Scoreboard1 m_SpawnAreaScoreboard;
-
-    public int m_Deaths = 0;
-    public int m_TotalDeaths = 0;
     public void OnLocalPlayerKilledBySkeleton()
     {
         this.m_Deaths++;
@@ -1803,7 +1823,28 @@ public class Game : NetworkInterface
 
         if (this.m_SpawnAreaScoreboard == null) return;
 
-        this.m_SpawnAreaScoreboard.AnnounceScoreChange(this.m_Deaths, this.m_TotalDeaths);
+        this.m_SpawnAreaScoreboard.AnnounceScoreChange(
+            this.m_Deaths,
+            this.m_TotalDeaths,
+            this.m_ForestsAttempted,
+            this.m_ForestsCompleted
+        );
+    }
+
+    public void OnLocalPlayerForestCompleted()
+    {
+        if (!this.m_GameStatus.Equals(GameStatus.InProgress)) return;
+
+        this.m_ForestsCompleted++;
+
+        if (this.m_SpawnAreaScoreboard == null) return;
+
+        this.m_SpawnAreaScoreboard.AnnounceScoreChange(
+            this.m_Deaths,
+            this.m_TotalDeaths,
+            this.m_ForestsAttempted,
+            this.m_ForestsCompleted
+        );
     }
 }
 

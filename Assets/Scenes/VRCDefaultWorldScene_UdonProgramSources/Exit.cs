@@ -31,6 +31,8 @@ public class Exit : UdonSharpBehaviour
 
         if (this.m_HasEnteredAlready) return;
 
+        this.m_Game.OnLocalPlayerForestCompleted();
+
         this.m_HasEnteredAlready = true;
 
         SendCustomEventDelayedSeconds(
