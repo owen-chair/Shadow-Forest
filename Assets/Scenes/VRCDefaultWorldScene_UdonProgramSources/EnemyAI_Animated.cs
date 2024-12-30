@@ -105,9 +105,11 @@ public class EnemyAI_Animated : UdonSharpBehaviour
 
         this.m_StunEffectParticleSystem.Play();
         this.m_IsStunned = true;
-        if (this.m_StunnedAudioSource.isPlaying) return;
 
-        this.m_StunnedAudioSource.Play();
+        if (!this.m_StunnedAudioSource.isPlaying)
+        {
+            this.m_StunnedAudioSource.Play();
+        }
 
         SendCustomEventDelayedSeconds(nameof(this.OnStunExpired), 6.0f);
     }

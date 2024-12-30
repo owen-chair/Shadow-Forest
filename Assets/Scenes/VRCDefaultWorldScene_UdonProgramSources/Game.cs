@@ -85,6 +85,12 @@ public class Game : NetworkInterface
     public bool m_AbandonLaggers = true;
     public Toggle m_AbandonLaggersToggle;
 
+    public bool m_EasyModeOn = true;
+    public Toggle m_EasyModeToggle;
+
+    public bool m_HardModeOn = false;
+    public Toggle m_HardModeToggle;
+
     public int[][] m_Maze;
     private readonly string[] NumberLookup = new string[] 
     {
@@ -146,6 +152,92 @@ public class Game : NetworkInterface
             if(this.m_RoundTimeSlider.value != Mathf.Round(this.m_RoundTimeSeconds * 0.01666666666666666666666666666667f))
             {
                 this.m_RoundTimeSliderValueChanged = true;
+            }
+        }
+    }
+
+    public void On_MasterUI_EasyMode_Toggled()
+    {
+        if (!Networking.IsMaster) return;
+
+        if (this.m_EasyModeToggle != null)
+        {
+            this.m_EasyModeOn = this.m_EasyModeToggle.isOn;
+            if (this.m_HardModeToggle != null)
+            {
+                this.m_HardModeToggle.isOn = !this.m_EasyModeOn;
+                this.m_HardModeOn = !this.m_EasyModeOn;
+            }
+
+            SendMethodNetworked(
+                nameof(this.On_EasyModeValueChanged),
+                SyncTarget.All,
+                new DataToken(Networking.LocalPlayer),
+                new DataToken(this.m_EasyModeOn)
+            );
+        }
+    }
+
+    public void On_MasterUI_HardMode_Toggled()
+    {
+        if (!Networking.IsMaster) return;
+
+        if (this.m_HardModeToggle != null)
+        {
+            this.m_HardModeOn = this.m_HardModeToggle.isOn;
+            if (this.m_EasyModeToggle != null)
+            {
+                this.m_EasyModeToggle.isOn = !this.m_HardModeOn;
+                this.m_EasyModeOn = !this.m_HardModeOn;
+            }
+
+            SendMethodNetworked(
+                nameof(this.On_HardModeValueChanged),
+                SyncTarget.All,
+                new DataToken(Networking.LocalPlayer),
+                new DataToken(this.m_HardModeOn)
+            );
+        }
+    }
+
+    [NetworkedMethod]
+    public void On_EasyModeValueChanged(VRCPlayerApi requestingPlayer, bool state)
+    {
+        if (requestingPlayer == null) return;
+        if (!requestingPlayer.IsValid()) return;
+        if (!requestingPlayer.isMaster) return;
+        if (this.m_EasyModeToggle == null) return;
+
+        this.m_EasyModeToggle.isOn = state;
+        this.m_EasyModeOn = state;
+
+        if (this.m_HardModeToggle != null)
+        {
+            if (this.m_HardModeToggle.isOn == state)
+            {
+                this.m_HardModeToggle.isOn = !state;
+                this.m_HardModeOn = !state;
+            }
+        }
+    }
+
+    [NetworkedMethod]
+    public void On_HardModeValueChanged(VRCPlayerApi requestingPlayer, bool state)
+    {
+        if (requestingPlayer == null) return;
+        if (!requestingPlayer.IsValid()) return;
+        if (!requestingPlayer.isMaster) return;
+        if (this.m_HardModeToggle == null) return;
+
+        this.m_HardModeToggle.isOn = state;
+        this.m_HardModeOn = state;
+
+        if (this.m_EasyModeToggle != null)
+        {
+            if (this.m_EasyModeToggle.isOn == state)
+            {
+                this.m_EasyModeToggle.isOn = !state;
+                this.m_EasyModeOn = !state;
             }
         }
     }
@@ -312,6 +404,48 @@ public class Game : NetworkInterface
         if(Networking.IsMaster)
         {
             Debug.Log($"[Game.cs] OnPlayerJoined: Master is local player");
+
+            if (this.m_EasyModeToggle != null)
+            {
+                this.m_EasyModeToggle.interactable = true;
+            }
+
+            if (this.m_HardModeToggle != null)
+            {
+                this.m_HardModeToggle.interactable = true;
+            }
+
+            if (this.m_AbandonLaggersToggle != null)
+            {
+                this.m_AbandonLaggersToggle.interactable = true;
+            }
+
+            if (this.m_RoundTimeSlider != null)
+            {
+                this.m_RoundTimeSlider.interactable = true;
+            }
+        }
+        else
+        {
+            if (this.m_EasyModeToggle != null)
+            {
+                this.m_EasyModeToggle.interactable = false;
+            }
+
+            if (this.m_HardModeToggle != false)
+            {
+                this.m_HardModeToggle.interactable = false;
+            }
+
+            if (this.m_AbandonLaggersToggle != false)
+            {
+                this.m_AbandonLaggersToggle.interactable = false;
+            }
+
+            if (this.m_RoundTimeSlider != null)
+            {
+                this.m_RoundTimeSlider.interactable = false;
+            }
         }
 
         if (player.isLocal && !Networking.IsMaster)
@@ -436,6 +570,48 @@ public class Game : NetworkInterface
             if(this.m_GameStatus == GameStatus.Waiting || this.m_GameStatus == GameStatus.Finished || this.m_GameStatus == GameStatus.Generating)
             {
                 this.On_ResetGame();
+            }
+
+            if(this.m_EasyModeToggle != null)
+            {
+                this.m_EasyModeToggle.interactable = true;
+            }
+
+            if (this.m_HardModeToggle != null)
+            {
+                this.m_HardModeToggle.interactable = true;
+            }
+
+            if (this.m_AbandonLaggersToggle != null)
+            {
+                this.m_AbandonLaggersToggle.interactable = true;
+            }
+
+            if (this.m_RoundTimeSlider != null)
+            {
+                this.m_RoundTimeSlider.interactable = true;
+            }
+        }
+        else
+        {
+            if (this.m_EasyModeToggle != null)
+            {
+                this.m_EasyModeToggle.interactable = false;
+            }
+
+            if (this.m_HardModeToggle != false)
+            {
+                this.m_HardModeToggle.interactable = false;
+            }
+
+            if (this.m_AbandonLaggersToggle != false)
+            {
+                this.m_AbandonLaggersToggle.interactable = false;
+            }
+
+            if (this.m_RoundTimeSlider != null)
+            {
+                this.m_RoundTimeSlider.interactable = false;
             }
         }
 

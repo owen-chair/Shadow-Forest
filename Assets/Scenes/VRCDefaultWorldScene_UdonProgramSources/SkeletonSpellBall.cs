@@ -81,7 +81,7 @@ public class SkeletonSpellBall : UdonSharpBehaviour
 
         if(spellBall.m_Target.isLocal)
         {
-            spellBall.m_Target.Immobilize(true);
+            //spellBall.m_Target.Immobilize(true);
         }
     }
 

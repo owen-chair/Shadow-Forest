@@ -505,9 +505,10 @@ public class LevelGenerator : UdonSharpBehaviour
         this.m_Game.m_InitialMazeData[this.m_Game.m_InitialMazeDataExit.x][this.m_Game.m_InitialMazeDataExit.y] = 1;
 
         Vector2Int[] path = new Vector2Int[width * height];
-            
+
+        int twistiness = this.m_Game.m_EasyModeOn ? 150 : 10;
         int size;
-        path = GenerateTwistyPath(width, height, new Vector2Int(1, 1), this.m_Game.m_InitialMazeDataExit, out size);
+        path = GenerateTwistyPath(width, height, new Vector2Int(1, 1), this.m_Game.m_InitialMazeDataExit, out size, twistiness);
         
         bool foundExit = false;
         for (int i = size - 1; i >= 0; i--)
@@ -596,7 +597,7 @@ public class LevelGenerator : UdonSharpBehaviour
         this.m_TP_Moved = false;
     }
 
-    public Vector2Int[] GenerateTwistyPath(int width, int height, Vector2Int start, Vector2Int exit, out int size)
+    public Vector2Int[] GenerateTwistyPath(int width, int height, Vector2Int start, Vector2Int exit, out int size, int twistiness)
     {
         // Initialize or resize arrays if needed
         if (m_Path == null || m_Path.Length != width * height)
@@ -672,7 +673,7 @@ public class LevelGenerator : UdonSharpBehaviour
                 
                 if (IsWithinBounds(m_Next, width, height) && !m_Visited[Get1DIndex(m_Next.x, m_Next.y, width)])
                 {
-                    if ((UnityEngine.Random.Range(0, 100) > 2 && (m_Next.x - exit.x) * (m_Next.x - exit.x) + (m_Next.y - exit.y) * (m_Next.y - exit.y) > 25) || 
+                    if ((UnityEngine.Random.Range(0, 1000) > twistiness && (m_Next.x - exit.x) * (m_Next.x - exit.x) + (m_Next.y - exit.y) * (m_Next.y - exit.y) > 25) || 
                         IsCloserToExit(this.m_TP_Current, m_Next, exit))
                     {
                         this.m_TP_Current.x = m_Next.x;

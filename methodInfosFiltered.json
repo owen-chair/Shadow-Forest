@@ -21,31 +21,45 @@
 			"__0_club_rotation__param"
 		]
 	},
-	"Game.On_AbandonLaggersValueChanged": {
-		"methodName": "__0_On_AbandonLaggersValueChanged",
+	"Game.On_EasyModeValueChanged": {
+		"methodName": "__0_On_EasyModeValueChanged",
 		"parameters": [
 			"__0_requestingPlayer__param",
 			"__0_state__param"
 		]
 	},
+	"Game.On_HardModeValueChanged": {
+		"methodName": "__0_On_HardModeValueChanged",
+		"parameters": [
+			"__1_requestingPlayer__param",
+			"__1_state__param"
+		]
+	},
+	"Game.On_AbandonLaggersValueChanged": {
+		"methodName": "__0_On_AbandonLaggersValueChanged",
+		"parameters": [
+			"__2_requestingPlayer__param",
+			"__2_state__param"
+		]
+	},
 	"Game.OnRoundTimeSliderValueChanged": {
 		"methodName": "__0_OnRoundTimeSliderValueChanged",
 		"parameters": [
-			"__1_requestingPlayer__param",
+			"__3_requestingPlayer__param",
 			"__0_valueMinutes__param"
 		]
 	},
 	"Game.On_InitialGameStatusRequest": {
 		"methodName": "__0_On_InitialGameStatusRequest",
 		"parameters": [
-			"__2_requestingPlayer__param"
+			"__4_requestingPlayer__param"
 		]
 	},
 	"Game.On_InitialGameStatusResponse": {
 		"methodName": "__0_On_InitialGameStatusResponse",
 		"parameters": [
 			"__0_respondingPlayer__param",
-			"__3_requestingPlayer__param",
+			"__5_requestingPlayer__param",
 			"__0_gameStatus__param",
 			"__0_roundTimeSeconds__param",
 			"__0_abandonLaggers__param"
@@ -54,7 +68,7 @@
 	"Game.On_ReceivedPlayerLoadingPercentage": {
 		"methodName": "__0_On_ReceivedPlayerLoadingPercentage",
 		"parameters": [
-			"__4_requestingPlayer__param",
+			"__6_requestingPlayer__param",
 			"__0_percentage__param",
 			"__0_playerNameId__param",
 			"__0_fps__param"
@@ -63,13 +77,13 @@
 	"Game.On_AnnounceStartGameButtonPressed": {
 		"methodName": "__0_On_AnnounceStartGameButtonPressed",
 		"parameters": [
-			"__5_requestingPlayer__param"
+			"__7_requestingPlayer__param"
 		]
 	},
 	"Game.On_SyncStateDictionaries": {
 		"methodName": "__0_On_SyncStateDictionaries",
 		"parameters": [
-			"__6_requestingPlayer__param",
+			"__8_requestingPlayer__param",
 			"__0_generationStatusToken__param",
 			"__0_loadingStatesToken__param",
 			"__0_playersExpected__param"
@@ -92,21 +106,21 @@
 	"Game.On_LateJoiner": {
 		"methodName": "__0_On_LateJoiner",
 		"parameters": [
-			"__7_requestingPlayer__param",
+			"__9_requestingPlayer__param",
 			"__0_latePlayer__param"
 		]
 	},
 	"Game.On_StartGameReceived": {
 		"methodName": "__0_On_StartGameReceived",
 		"parameters": [
-			"__8_requestingPlayer__param",
+			"__10_requestingPlayer__param",
 			"__0_playerFollowrStatusJsonString__param"
 		]
 	},
 	"Game.On_PredefinedPathReceived": {
 		"methodName": "__0_On_PredefinedPathReceived",
 		"parameters": [
-			"__9_requestingPlayer__param",
+			"__11_requestingPlayer__param",
 			"__1_path__param",
 			"__1_aiID__param"
 		]
@@ -114,13 +128,13 @@
 	"Game.On_AnnouncePlayerRespawned": {
 		"methodName": "__0_On_AnnouncePlayerRespawned",
 		"parameters": [
-			"__10_requestingPlayer__param"
+			"__12_requestingPlayer__param"
 		]
 	},
 	"Game.On_GameFinished": {
 		"methodName": "__0_On_GameFinished",
 		"parameters": [
-			"__11_requestingPlayer__param",
+			"__13_requestingPlayer__param",
 			"__0_lordDied__param",
 			"__0_allNonFollowersDied__param"
 		]
