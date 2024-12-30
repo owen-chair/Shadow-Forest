@@ -1,6 +1,5 @@
 # Shadow Forest: A Multiplayer Stealth Game for Unity / VRChat
 
-### 🕶️ Sneak, Strategize, Survive!  
 Shadow Forest is a challenging multiplayer stealth game designed for VRChat, where players navigate a procedurally generated forest, evade skeletons, and reach the temple to join or kill the furry temple guardian.
 
 ### 🌟 Key Features
