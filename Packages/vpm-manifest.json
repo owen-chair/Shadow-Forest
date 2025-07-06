@@ -1,0 +1,50 @@
+{
+  "dependencies": {
+    "com.vrchat.base": {
+      "version": "3.6.1"
+    },
+    "com.vrchat.worlds": {
+      "version": "3.6.1"
+    },
+    "com.vrchat.core.vpm-resolver": {
+      "version": "0.1.29"
+    },
+    "com.miner28.networked-event-caller": {
+      "version": "3.1.13"
+    },
+    "vrchat.jordo.easyquestswitch": {
+      "version": "1.4.0"
+    },
+    "dev.onevr.vrworldtoolkit": {
+      "version": "3.1.0"
+    }
+  },
+  "locked": {
+    "com.vrchat.base": {
+      "version": "3.6.1",
+      "dependencies": {}
+    },
+    "com.vrchat.worlds": {
+      "version": "3.6.1",
+      "dependencies": {
+        "com.vrchat.base": "3.6.1"
+      }
+    },
+    "com.vrchat.core.vpm-resolver": {
+      "version": "0.1.29",
+      "dependencies": {}
+    },
+    "com.miner28.networked-event-caller": {
+      "version": "3.1.13",
+      "dependencies": {}
+    },
+    "vrchat.jordo.easyquestswitch": {
+      "version": "1.4.0",
+      "dependencies": {}
+    },
+    "dev.onevr.vrworldtoolkit": {
+      "version": "3.1.0",
+      "dependencies": {}
+    }
+  }
+}

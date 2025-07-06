@@ -1,0 +1,216 @@
+{
+	"CeremonialWine.On_RequestBecomeFollower": {
+		"methodName": "__0_On_RequestBecomeFollower",
+		"parameters": [
+			"__0_requestingPlayer__param"
+		]
+	},
+	"CeremonialWine.On_FollowerAnnouncement": {
+		"methodName": "__0_On_FollowerAnnouncement",
+		"parameters": [
+			"__1_requestingPlayer__param",
+			"__0_player__param"
+		]
+	},
+	"club.OnEnemyAIStunnedByPlayer": {
+		"methodName": "__0_OnEnemyAIStunnedByPlayer",
+		"parameters": [
+			"__0_attackingPlayer__param",
+			"__0_enemyAI_ID__param",
+			"__0_club_position__param",
+			"__0_club_rotation__param"
+		]
+	},
+	"Game.On_EasyModeValueChanged": {
+		"methodName": "__0_On_EasyModeValueChanged",
+		"parameters": [
+			"__0_requestingPlayer__param",
+			"__0_state__param"
+		]
+	},
+	"Game.On_HardModeValueChanged": {
+		"methodName": "__0_On_HardModeValueChanged",
+		"parameters": [
+			"__1_requestingPlayer__param",
+			"__1_state__param"
+		]
+	},
+	"Game.On_AbandonLaggersValueChanged": {
+		"methodName": "__0_On_AbandonLaggersValueChanged",
+		"parameters": [
+			"__2_requestingPlayer__param",
+			"__2_state__param"
+		]
+	},
+	"Game.OnRoundTimeSliderValueChanged": {
+		"methodName": "__0_OnRoundTimeSliderValueChanged",
+		"parameters": [
+			"__3_requestingPlayer__param",
+			"__0_valueMinutes__param"
+		]
+	},
+	"Game.On_InitialGameStatusRequest": {
+		"methodName": "__0_On_InitialGameStatusRequest",
+		"parameters": [
+			"__4_requestingPlayer__param"
+		]
+	},
+	"Game.On_InitialGameStatusResponse": {
+		"methodName": "__0_On_InitialGameStatusResponse",
+		"parameters": [
+			"__0_respondingPlayer__param",
+			"__5_requestingPlayer__param",
+			"__0_gameStatus__param",
+			"__0_roundTimeSeconds__param",
+			"__0_abandonLaggers__param"
+		]
+	},
+	"Game.On_ReceivedPlayerLoadingPercentage": {
+		"methodName": "__0_On_ReceivedPlayerLoadingPercentage",
+		"parameters": [
+			"__6_requestingPlayer__param",
+			"__0_percentage__param",
+			"__0_playerNameId__param",
+			"__0_fps__param"
+		]
+	},
+	"Game.On_AnnounceStartGameButtonPressed": {
+		"methodName": "__0_On_AnnounceStartGameButtonPressed",
+		"parameters": [
+			"__7_requestingPlayer__param"
+		]
+	},
+	"Game.On_SyncStateDictionaries": {
+		"methodName": "__0_On_SyncStateDictionaries",
+		"parameters": [
+			"__8_requestingPlayer__param",
+			"__0_generationStatusToken__param",
+			"__0_loadingStatesToken__param",
+			"__0_playersExpected__param"
+		]
+	},
+	"Game.On_MazeDataPartReceived": {
+		"methodName": "__0_On_MazeDataPartReceived",
+		"parameters": [
+			"__1_respondingPlayer__param",
+			"__0_dataPart__param",
+			"__0_partIndex__param"
+		]
+	},
+	"Game.On_Received_FinishedGeneratingMaze": {
+		"methodName": "__0_On_Received_FinishedGeneratingMaze",
+		"parameters": [
+			"__0_player__param"
+		]
+	},
+	"Game.On_LateJoiner": {
+		"methodName": "__0_On_LateJoiner",
+		"parameters": [
+			"__9_requestingPlayer__param",
+			"__0_latePlayer__param"
+		]
+	},
+	"Game.On_StartGameReceived": {
+		"methodName": "__0_On_StartGameReceived",
+		"parameters": [
+			"__10_requestingPlayer__param",
+			"__0_playerFollowrStatusJsonString__param"
+		]
+	},
+	"Game.On_PredefinedPathReceived": {
+		"methodName": "__0_On_PredefinedPathReceived",
+		"parameters": [
+			"__11_requestingPlayer__param",
+			"__1_path__param",
+			"__1_aiID__param"
+		]
+	},
+	"Game.On_AnnouncePlayerRespawned": {
+		"methodName": "__0_On_AnnouncePlayerRespawned",
+		"parameters": [
+			"__12_requestingPlayer__param"
+		]
+	},
+	"Game.On_GameFinished": {
+		"methodName": "__0_On_GameFinished",
+		"parameters": [
+			"__13_requestingPlayer__param",
+			"__0_lordDied__param",
+			"__0_allNonFollowersDied__param",
+			"__1_attackingPlayer__param"
+		]
+	},
+	"Game.On_ResetGameReceived": {
+		"methodName": "On_ResetGameReceived",
+		"parameters": null
+	},
+	"Game.On_Player_Attacked_By_Enemy_AI": {
+		"methodName": "__0_On_Player_Attacked_By_Enemy_AI",
+		"parameters": [
+			"__1_deadPlayer__param",
+			"__3_aiID__param"
+		]
+	},
+	"Lord.Notify_SetTargetPosition": {
+		"methodName": "__0_Notify_SetTargetPosition",
+		"parameters": [
+			"__0_requestingPlayer__param",
+			"__0_targetPosition__param"
+		]
+	},
+	"Lord.OnHitByPlayer": {
+		"methodName": "__0_OnHitByPlayer",
+		"parameters": [
+			"__0_attackingPlayer__param"
+		]
+	},
+	"Lord.On_Notify_PlayerEntered": {
+		"methodName": "__0_On_Notify_PlayerEntered",
+		"parameters": [
+			"__1_player__param"
+		]
+	},
+	"Lord.Notify_PlayerEnterFailed": {
+		"methodName": "__0_Notify_PlayerEnterFailed",
+		"parameters": [
+			"__0_targetPlayer__param"
+		]
+	},
+	"Melee_Weapon.OnEnemyAIHitByPlayer": {
+		"methodName": "__0_OnEnemyAIHitByPlayer",
+		"parameters": [
+			"__0_attackingPlayer__param",
+			"__0_enemyAI_ID__param"
+		]
+	},
+	"Melee_Weapon.OnPlayerHit": {
+		"methodName": "__0_OnPlayerHit",
+		"parameters": [
+			"__1_attackingPlayer__param",
+			"__0_hitPlayer__param"
+		]
+	},
+	"Potion.NW_SpawnBreakParticle": {
+		"methodName": "__0_NW_SpawnBreakParticle",
+		"parameters": [
+			"__0_atPosition__param"
+		]
+	},
+	"Scoreboard1.OnScoreChangeReceived": {
+		"methodName": "__0_OnScoreChangeReceived",
+		"parameters": [
+			"__0_requestingPlayer__param",
+			"__1_deaths__param",
+			"__1_totalDeaths__param",
+			"__1_forestsAttempted__param",
+			"__1_forestsCompleted__param"
+		]
+	},
+	"shield.OnBreak": {
+		"methodName": "__0_OnBreak",
+		"parameters": [
+			"__1_holdingPlayer__param",
+			"__0_shieldPos__param"
+		]
+	}
+}
